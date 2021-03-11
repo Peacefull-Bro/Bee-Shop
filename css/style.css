@@ -94,6 +94,112 @@ button {
 * {
   margin: 0;
   padding: 0;
+<<<<<<< Updated upstream
+=======
+}
+
+.header {
+  background: linear-gradient(92.55deg, #f2b236 32.31%, #ff9c1a 64.34%);
+  padding: 42px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 99;
+  width: 100%;
+}
+
+.header-flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  margin-right: 91px;
+  margin-left: 18px;
+  margin-bottom: 30px;
+}
+
+.header-logo-link {
+  display: block;
+  min-height: 47px;
+  min-width: 290px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0.6em;
+  color: #FFFFFF;
+  background-color: #F6D799;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header-logo-txt {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FAFAF9;
+}
+
+.header-phone {
+  margin-top: 28px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #884900;
+}
+
+.header-search {
+  margin-top: 14px;
+  margin-right: 2px;
+  width: 327px;
+  max-height: 45px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  position: relative;
+  padding: 12px 0 12px 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-btn-link {
+  margin-top: 14px;
+  display: block;
+  max-width: 45px;
+  max-height: 45px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 1px 2px 0;
+}
+
+.header-btn-link-svg {
+  fill: #F2B236;
+}
+
+.header-btn-link:nth-child(5) .header-btn-link-svg {
+  margin-top: 2px;
+}
+
+.header-btn-link:hover {
+  background-color: #F2B236;
+}
+
+.header-btn-link:hover .header-btn-link-svg {
+  fill: #FFFFFF;
+}
+
+.header-menu {
+  padding: 22px 0;
+  background-color: #FAFAF9;
+>>>>>>> Stashed changes
 }
 
 li {
@@ -108,12 +214,36 @@ a {
   margin-left: 300px;
 }
 
-.bold {
+.feedback {
+  width: 100%;
+}
+
+.feedback-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-text-title {
   font-family: rubik;
-  font-weight: 700;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.feedback-link {
+  font-family: rubik;
+  font-weight: 500;
   font-style: normal;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #DB4E66;
+  padding-top: 28px;
 }
 
 .footer {
@@ -223,6 +353,21 @@ a {
   margin-bottom: 16px;
 }
 
+<<<<<<< Updated upstream
+=======
+.footer-top-right-list-color {
+  color: #FFFFFF;
+}
+
+.footer-top-right-list:hover {
+  font-family: rubik;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+>>>>>>> Stashed changes
 .footer-top-right:nth-child(2) {
   margin-left: 300px;
 }

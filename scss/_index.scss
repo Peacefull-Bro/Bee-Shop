@@ -1,4 +1,5 @@
 /* index */
+<<<<<<< Updated upstream
 
 *{
      margin: 0;
@@ -9,9 +10,146 @@
 
 .bold {
     @include font($size-format: 700, $fonts: 16px, $linehe: 160%);
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+// ========== header ====================
+.header {
+    background: linear-gradient(92.55deg, $main-background-one 32.31%, $main-background-two 64.34%);
+    padding: 42px 0 0;
+    box-sizing: border-box;
+    // position: fixed;
+    // Внимание! меню должно быть выше, чем другие блоки
+    z-index: 99;
+    width: 100%;
+
+    &-flx {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        margin-right: 91px;
+        margin-left: 18px;
+        margin-bottom: 30px;
+
+        &-link {
+            display: block;
+            min-height: 47px;
+            min-width: 290px;
+            @include font(500, 19px, 22px);
+            letter-spacing: 0.6em;
+            color: $white;
+            background-color: $peach;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        &-txt {
+            @include font(500, 18px, 21px);
+            color: $white-light;
+        }
+    }
+
+    &-phone {
+        margin-top: 28px;
+        @include font(500, 18px, 21px);
+        color: $brown;
+    }
+
+    &-search {
+        margin-top: 14px;
+        margin-right: 2px;
+        width: 327px;
+        max-height: 45px;
+        background: $white;
+        border-radius: 30px;
+        position: relative;
+        padding: 12px 0 12px 22px;
+        box-sizing: border-box;
+    }
+
+    &-btn-link {
+        margin-top: 14px;
+        display: block;
+        max-width: 45px;
+        max-height: 45px;
+        background-color: $white;
+        border-radius: 12px;
+        padding: 1px 2px 0;
+
+
+        &-svg {
+            fill: $orange;
+        }
+
+
+        &:nth-child(5) .header-btn-link-svg {
+            margin-top: 2px;
+        }
+
+        &:hover {
+            background-color: $orange;
+        }
+
+        &:hover .header-btn-link-svg {
+            fill: $white;
+        }
+    }
+
+    &-menu {
+        padding: 22px 0;
+        background-color: $white-light;
+
+        &-list {
+            display: flex;
+            padding-left: 0;
+            box-sizing: border-box;
+            margin: 0;
+            justify-content: flex-end;
+
+            &-li {
+                margin-right: 36px;
+
+                &-link {
+                    @include font(400, 16px, 26px);
+                    color: $black-grey;
+                }
+            }
+        }
+    }
 }
 
-// ==========FOOTER-CORRECTIONS==========
+// end ====== header ================ end
+
+
+
+// ==========FEEDBACK BLOCK==========
+.feedback{
+    width: 100%;
+    
+    &-text{
+        display: flex;
+        justify-content: space-between;
+
+        &-title{
+            @include font(500, 44px, 52px);
+        }
+    }
+
+
+    &-link{
+        @include font(500, 16px, 19px);
+        text-transform: uppercase;
+        color: $blush;
+        padding-top: 28px;
+    }
+>>>>>>> Stashed changes
+}
+
+// ==========FEEDBACK BLOCK END==========
 
 // ===============FOOTER=================
 
@@ -36,7 +174,7 @@
                     display: block;
                     padding: 27px 63px 27px 63px;
                     text-decoration: none;
-                    @include font($size-format: 500, $fonts: 19px, $linehe: 22px);
+                    @include font(500, 19px, 22px);
                     letter-spacing: 0.6em;
                     color: $white;
                 }
@@ -44,14 +182,14 @@
 
             &-phone {
                 margin-top: 16px;
-                @include font($size-format: 500, $fonts: 18px, $linehe: 21px);
+                @include font(500, 18px, 21px);
                 display: block;
                 color: $brown;
             }
 
             &-email {
                 margin-top: 8px;
-                @include font($size-format: 500, $fonts: 18px, $linehe: 21px);
+                @include font(500, 18px, 21px);
                 display: block;
                 color: $brown;
             }
@@ -68,7 +206,7 @@
                 &-input {
                     color: $grey;
                     box-sizing: border-box;
-                    @include font($size-format: 400, $fonts: 16px, $linehe: 19px);
+                    @include font(400, 16px, 19px);
                     outline: 0;
                     border: none;
                 }
@@ -99,6 +237,17 @@
 
             &-list {
                 margin-bottom: 16px;
+<<<<<<< Updated upstream
+=======
+
+                &-color{
+                    color: $white;
+                }
+
+                &:hover{
+                    @include font(700, 16px, 160%);
+                }
+>>>>>>> Stashed changes
             }
 
             &:nth-child(2){
