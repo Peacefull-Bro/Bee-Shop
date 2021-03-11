@@ -121,13 +121,10 @@
     &-text{
         display: flex;
         justify-content: space-between;
-
         &-title{
             @include font(500, 44px, 52px);
         }
     }
-
-
     &-link{
         @include font(500, 16px, 19px);
         text-transform: uppercase;
